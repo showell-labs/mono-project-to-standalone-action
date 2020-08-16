@@ -3,7 +3,7 @@ const github = require('@actions/github');
 const shell = require('shelljs');
 
 try {
-  const projectTotransform = core.getInput('project-to-transformt');
+  const projectTotransform = core.getInput('project-to-transform');
   const projectsDir = core.getInput('projects-dir');
   // Here's what we want to do:
   // Remove everything from root level
