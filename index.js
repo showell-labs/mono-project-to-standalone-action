@@ -9,7 +9,7 @@ try {
   // Remove everything from root level
   // Move everything from projects dir to root level
   // Remove projects dir
-    shell.ls('.');
+    console.log(shell.ls('.'));
     console.log(projectTotransform, projectsDir);
     shell.mv(`./${projectsDir}/${projectTotransform}`, '/tmp');
     shell.rm('-rf', './*');
