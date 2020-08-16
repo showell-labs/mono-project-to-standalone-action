@@ -1,0 +1,13 @@
+name: 'Monorepo to single standalone project'
+description: 'This is a GitHub action that turns given subdirectory to standalone project to make CI operations easier'
+inputs:
+  project-to-transform:  # id of input
+    description: 'Which project to transform into standalone. Do not use slash in beginning'
+    required: true
+  projects-dir:  # id of input
+    description: 'Where to find projects, relative to root of repo. DO NOT include trailing slash (defaults to packages)'
+    required: false
+    default: 'packages'
+runs:
+  using: 'node12'
+  main: 'index.js'
