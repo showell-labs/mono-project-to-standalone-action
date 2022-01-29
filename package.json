@@ -1,6 +1,6 @@
 {
   "name": "mono-to-standalone-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a GitHub action that turns given subdirectory to standalone project to make CI operations easier",
   "main": "index.js",
   "author": "Ronnie Nygren",
